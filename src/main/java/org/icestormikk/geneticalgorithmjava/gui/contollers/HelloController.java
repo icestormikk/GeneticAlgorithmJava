@@ -1,4 +1,4 @@
-package org.icestormikk.geneticalgorithmjava;
+package org.icestormikk.geneticalgorithmjava.gui.contollers;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
