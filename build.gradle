@@ -17,10 +17,10 @@ ext {
     junitVersion = '5.10.0'
 }
 
-sourceCompatibility = '22'
-targetCompatibility = '22'
+sourceCompatibility = '17'
+targetCompatibility = '17'
 
-tasks.withType(JavaCompile) {
+tasks.withType(JavaCompile).configureEach {
     options.encoding = 'UTF-8'
 }
 
@@ -40,6 +40,9 @@ dependencies {
         exclude(group: 'org.openjfx')
     }
     implementation('org.kordamp.bootstrapfx:bootstrapfx-core:0.4.0')
+
+    compileOnly("org.projectlombok:lombok:1.18.34")
+    annotationProcessor 'org.projectlombok:lombok:1.18.34'
 
     testImplementation("org.junit.jupiter:junit-jupiter-api:${junitVersion}")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${junitVersion}")
