@@ -1,4 +1,4 @@
-package org.icestormikk.geneticalgorithmjava.core.domain;
+package org.icestormikk.geneticalgorithmjava.core.domain.abstraction;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ListChangeListener;
