@@ -9,7 +9,7 @@ import java.lang.annotation.Target;
  * Тестовая аннотация для ограничения длины хромососом в популяции
  */
 @Retention(RetentionPolicy.RUNTIME)
-@Target(ElementType.CONSTRUCTOR)
+@Target(ElementType.TYPE)
 public @interface FixedLength {
     int value();
 }
